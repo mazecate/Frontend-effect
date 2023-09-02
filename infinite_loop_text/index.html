@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+
+        .container {
+            z-index: -1;
+            overflow: hidden;
+            white-space: nowrap;
+            font-size: 140px;
+            letter-spacing: -7px;
+            font-family: Arial, Helvetica, sans-serif;
+            line-height: 1;
+            color: #670000;
+            opacity: .8;
+            margin-bottom: -50px;
+        }
+        .container {
+            position: absolute;
+            z-index: 1;
+            top: 1.5%;
+        }
+
+        .container ul {
+            display: inline-block;
+            margin: 0;
+            padding: 0;
+            animation: animate_scroll 30s linear infinite;
+        }
+
+        .container li {
+            display: inline-block;
+            margin: 0 10px;
+        }
+        @keyframes animate_scroll{
+            0%{
+                transform:translateX(4px)
+            }
+            to{
+                transform:translateX(-100%)
+            }
+        }
+    </style>
+</head>
+<body>
+    <div class="container">
+        <ul>
+            <li>INTRODUCTION</li>
+            <li>INTRODUCTION</li>
+            <li>INTRODUCTION</li>
+            <li>INTRODUCTION</li>
+        </ul>
+        <ul>
+            <li>INTRODUCTION</li>
+            <li>INTRODUCTION</li>
+            <li>INTRODUCTION</li>
+            <li>INTRODUCTION</li>
+        </ul>
+    </div>
+</body>
+</html>
